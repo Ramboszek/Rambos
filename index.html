@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KBOSPAGE</title>
+        <img src="Rambo.png" alt="Rambo Bambo uciekl!" height="100" width="100"
+            </head>
+    <body>
+        <h1>Oficjalna strona Rambos</h1>
+        <h2>RamboOS - System z pasją po moim kotku🐈‍⬛</h2>
+        <hr>
+        <h3>RamboOS — description
+
+RamboOS is a minimal x86 operating system built entirely from scratch — no Linux kernel, no GRUB, no libc. Every byte that runs before you see the rambo> prompt was written specifically for this project: a hand-written stage-1 bootloader, a protected-mode kernel, its own disk drivers, and its own filesystem. It's named after Rambo, a much-loved cat.
+
+What it actually does:
+
+    Boots via a 512-byte hand-written bootloader (real mode → protected mode), with a proper MBR partition table so it boots correctly from a real USB stick on real hardware, not just in an emulator
+    VGA text-mode and 320×200 graphics, straight to hardware — no BIOS calls after boot
+    PS/2 keyboard driver, PIT-driven timer with a real interrupt-based tick counter
+    Every CPU exception (divide error, page fault, general protection fault, etc.) is caught by a real handler and turned into a red kernel-panic screen with a full register dump — not a silent hang
+    Its own flat filesystem on disk (superblock, file table, free-list allocator) — files, your name, and the machine's hostname all survive a reboot
+    Two disk drivers: legacy ATA/IDE for older hardware, and a real AHCI driver (with its own PCI bus scanner) for modern SATA controllers that don't expose the old ports at all — so installing actually works on current hardware, not just hardware from 15 years ago
+    A dialog-box installer in the style of Debian's own text-mode installer — arrow-key menus, Yes/No confirmations that default to "No" for anything destructive, a real progress gauge
+    First boot asks for a hostname and a name, Debian-installer style
+    A small interactive shell (edit, ls, cat, rm, df, sysfetch, whoami, panic, reboot) plus peck, a little snake-style game
+    A pigeon as the boot-menu mascot ("Coo.")
+
+It's honest about its own limits: no multitasking, no paging, no user mode yet — those are next on the list. It's a project about how much you can build with nothing but a keyboard and the Intel manual, not a production OS.</h3>
+<br>
+<h3>Meow: </h3>
+<audio src="Meow.mp3" controls></audio>
+
+<h4>- źródło do pobrania:</h4>
+<a href="https://drive.google.com/file/d/1J8edHQM2qusgGK3vgwah1zO2FcyybOFd/view?usp=drive_link" target="_blank"
+title="Strona google drive z plikiem IMG">Google Drive</a>
+<h4>link do discord: </h4>
+<a href="https://discord.gg/WMXEtXmern" target="_blank"
+title="Discord">Discord</a>
+</body>
+</html>
